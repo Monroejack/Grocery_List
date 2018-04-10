@@ -1,0 +1,13 @@
+<div class= 'col-md-12'>
+  <div class= 'well'>
+    <li>
+      <h5> <%= item.deadline %> </h5>
+      <h3 id= 'item_description'><%= link_to item.description, item, remote: true, method: :delete, data: { confirm: 'Are you sure?' } %> </h3>
+      <p class= 'text-right'>
+        <%= link_to "Edit", edit_item_path(item), class: 'btn btn-warning', remote: true %>
+        <%= link_to "Delete", item_path(item), class: 'btn btn-danger', method: :delete, remote: true, data:
+        { confirm: 'Are you sure?' } %>
+      </p>
+    </li>
+  </div>
+</div>

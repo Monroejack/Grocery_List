@@ -1,0 +1,23 @@
+<%= form_with(model: item) do |form| %>
+  <% if item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.text_area :description, id: :item_description, placeholder: "What do you need from the store?", class: 'form-control' %>
+    <br />
+    <%= form.text_field :deadline, id: "datetimepicker1", placeholder: "When do you need this item?", class:'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Submit', class: 'btn btn-primary form-control' %>
+  </div>
+<% end %>

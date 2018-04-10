@@ -1,0 +1,36 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap-datetimepicker";
+
+body {
+  background: rgba(0, 50, 125, 0.2);
+}
+
+h1, h2 {
+  color: green;
+  font-weight:bold;
+  text-transform: uppercase;
+  font-family: Pattaya;
+}
+
+#task-form {
+  margin:10px 0;
+  background: rgba(0, 50, 200, 0.5);
+  padding: 10px 10px 5px;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+  font-family: Dosis;
+}
+
+a:hover {
+  background: none;
+  text-decoration:line-through;
+  color: #336699;
+}
+
+h5, p {
+  font-family: Dosis;
+}
