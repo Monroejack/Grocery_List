@@ -1,16 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap-datetimepicker";
-
-body {
-  background: rgba(0, 50, 125, 0.2);
-}
+@import "items";
 
 h1, h2 {
-  color: green;
-  font-weight:bold;
-  text-transform: uppercase;
-  font-family: Pattaya;
+  font-family: Roboto;
 }
 
 #task-form {
@@ -21,8 +15,7 @@ h1, h2 {
 
 a {
   text-decoration: none;
-  color: green;
-  font-family: Dosis;
+  font-family: Roboto;
 }
 
 a:hover {
@@ -32,5 +25,5 @@ a:hover {
 }
 
 h5, p {
-  font-family: Dosis;
+  font-family: Roboto;
 }

@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :all_items, only: [:index, :create, :update, :destroy]
+  before_action :all_items, only: [:list, :create, :update, :destroy]
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   # GET /items
@@ -10,6 +10,15 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.json
   def show
+  end
+
+  def list
+  end
+
+  def calendar
+  end
+
+  def dashboard
   end
 
   # GET /items/new
